@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Activity Calendar</title>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+ <style> 
+ /* styles.css */
+body {
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 20px;
+            background-image: url("bg.jpg");
+            height:100vh;            
+             margin:0;
+        }
+
+header {
+  
+    text-align: center;
+    color:white;
+}
+header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+header .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        header .logo-container img {
+            height: 90px;
+            margin-right: 10px;
+            border-radius: 50%;
+            object-fit: cover;
+            align-items: center;
+       }     padding: 1em;
+h2{
+        color:white;
+       }
+main {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.user-selection {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.calendar {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.days-of-week {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.calendar-body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.calendar-day {
+    width: calc(100% / 7);
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 40px;
+}
+.calendar-day .activity {
+    font-weight: bold;
+}
+
+.calendar-day .time {
+    color: #777;
+}
+section {
+            margin-bottom: 20px;
+        }
+
+footer {
+            color: #333;
+            padding: 20px 0;
+            text-align: center;
+        }
+        footer .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 10px;
+        }
+        footer .social-icons a {
+            color: #333;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        footer .social-icons a:hover {
+            color: #e91e63;
+        }
+        @media (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+            }
+        }
+
+
+</style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="logo.jpg" alt="Logo">
+                <h1>weeks.im</h1>
+            </div>
+
+     </header>
+    <main>
+        <div class="user-selection">
+            <label for="user-type">Select sector:</label>
+            <select id="user-type" onchange="filterActivities()">
+                <option value="all">All</option>
+                <option value="kids">Kids</option>
+                <option value="freelancers">Freelancers</option>
+                <option value="contentwriters">Content writers</option>
+                <option value="others">Others</option>
+            </select>
+        </div>
+        <h2>Weekly Activity Calender</h2>
+        <div class="calendar">
+            <div class="days-of-week">
+                <div>Sunday</div>
+                <div>Monday</div>
+                <div>Tuesday</div>
+                <div>Wednesday</div>
+                <div>Thursday</div>
+                <div>Friday</div>
+                <div>Saturday</div>
+                
+            </div>
+            <div class="calendar-body">
+                <div class="calendar-day" data-user-type="kids">
+                    <div class="activity"></div>
+                    <div class="time"></div>
+                </div>
+                <div class="calendar-day" data-user-type="kids">
+                    <div class="activity"></div>
+                    <div class="time"></div>
+                </div>
+                <div class="calendar-day" data-user-type="kids">
+                    <div class="activity"></div>
+                    <div class="time"></div>
+                </div>
+                <div class="calendar-day" data-user-type="kids">
+                    <div class="activity"></div>
+                    <div class="time"></div>
+                </div>
+                <!-- Repeat similar structure for other days -->
+                <div class="calendar-day" data-user-type="kids">
+                    <div class="activity"></div>
+                    <div class="time"></div>
+                </div>
+               <div class="calendar-day" data-user-type="kids">
+                    <div class="activity"></div>
+                    <div class="time"></div>
+                </div>
+               <div class="calendar-day" data-user-type="kids">
+                    <div class="activity"></div>
+                    <div class="time"></div>
+                </div>
+                <div class="calendar-day" data-user-type="freelancers">
+                    <div class="activity"></div>
+                    <div class="time"></div>
+                </div>
+               <div class="calendar-day" data-user-type="freelancers">
+                    <div class="activity"></div>
+                    <div class="time"></div>
+                </div>
+                <div class="calendar-day" data-user-type="freelancers">
+                    <div class="activity"></div>
+                    <div class="time"></div>
+                </div>
+                 <div class="calendar-day" data-user-type="freelancers">
+                    <div class="activity"></div>
+                    <div class="time"></div>
+                </div>
+                <div class="calendar-day" data-user-type="freelancers">
+                    <div class="activity"></div>
+                    <div class="time"></div>
+                </div>
+               <div class="calendar-day" data-user-type="freelancers">
+                    <div class="activity"></div>
+                    <div class="time"></div>
+                </div>
+               <div class="calendar-day" data-user-type="freelancers">
+                    <div class="activity"></div>
+                    <div class="time"></div>
+                </div>
+                <div class="calendar-day" data-user-type="contentwriters">
+                    <div class="activity"></div>
+                    <div class="time"></div>
+                </div>
+                <div class="calendar-day" data-user-type="contentwriters">
+                    <div class="activity"></div>
+                    <div class="time"></div>
+                </div>
+                <div class="calendar-day" data-user-type="contentwriters">
+                    <div class="activity"></div>
+                    <div class="time"></div>
+                </div>
+                 <div class="calendar-day" data-user-type="contentwriters">
+                    <div class="activity"></div>
+                    <div class="time"></div>
+                </div>
+               <div class="calendar-day" data-user-type="contentwriters">
+                    <div class="activity"></div>
+                    <div class="time"></div>
+                </div>
+                <div class="calendar-day" data-user-type="contentwriters">
+                    <div class="activity"></div>
+                    <div class="time"></div>
+                </div>
+                <div class="calendar-day" data-user-type="contentwriters">
+                    <div class="activity"></div>
+                    <div class="time"></div>
+                </div>
+               <div class="calendar-day" data-user-type="others">
+                    <div class="activity"></div>
+                    <div class="time"></div>
+                </div>
+              <div class="calendar-day" data-user-type="others">
+                    <div class="activity"></div>
+                    <div class="time"></div>
+                </div>
+
+                <div class="calendar-day" data-user-type="others">
+                    <div class="activity"></div>
+                    <div class="time"></div>
+                </div>
+
+                <div class="calendar-day" data-user-type="others">
+                    <div class="activity"></div>
+                    <div class="time"></div>
+                </div>
+                <div class="calendar-day" data-user-type="others">
+                    <div class="activity"></div>
+                    <div class="time"></div>
+                </div>
+               <div class="calendar-day" data-user-type="others">
+                    <div class="activity"></div>
+                    <div class="time"></div>
+                </div>
+               <div class="calendar-day" data-user-type="others">
+                    <div class="activity"></div>
+                    <div class="time"></div>
+                </div>
+               
+            </div>
+        </div>
+            
+    </main>
+<footer>
+        <div class="social-icons">
+            <a href="https://wa.me/your-number" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://twitter.com/your-profile" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/your-profile" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 weeks.im. All rights reserved.</p>
+    </footer>
+
+
+    <script>
+/* script.js */
+function filterActivities() {
+    const userType = document.getElementById('user-type').value;
+    const days = document.querySelectorAll('.calendar-day');
+
+    days.forEach(day => {
+        if (userType === 'all' || day.getAttribute('data-user-type') === userType || day.getAttribute('data-user-type') === 'all') {
+            day.style.display = 'block';
+        } else {
+            day.style.display = 'none';
+        }
+    });
+}
+
+// Initial filter to show all activities on page load
+filterActivities();
+document.addEventListener('DOMContentLoaded', function() {
+            // Add any interactive functionality here
+        });
+
+
+</script>
+</body>
+</html>
