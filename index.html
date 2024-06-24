@@ -118,6 +118,7 @@ footer {
         .others{
            background-color:lightpink;
          }
+        
 
 </style>
 </head>
@@ -128,6 +129,7 @@ footer {
                 <img src="logo.jpg" alt="Logo">
                 <h1>weeks.im</h1>
             </div>
+       
 
      </header>
     <main>
@@ -140,6 +142,10 @@ footer {
                 <option value="contentwriters">Content writers</option>
                 <option value="others">Others</option>
             </select>
+        </div>
+        <div class="search-container">
+        <label for="weekSearch">Search Week:</label>
+        <input type="text" id="weekSearch" name="weekSearch" oninput="searchWeek()" placeholder="Enter week number">
         </div>
         <h2>WEEKLY ACTIVITY CALENDER</h2>
            <div id="kids" class="sector-container kids"> 
@@ -1181,32 +1187,28 @@ function filterActivities() {
                 }
             });
         }
+function searchWeek() {
+    const searchInput = document.getElementById('weekSearch').value.toLowerCase();
+    const allCalendars = document.querySelectorAll('.calendar');
+
+    allCalendars.forEach(calendar => {
+        const weekNumber = calendar.querySelector('h4').textContent.toLowerCase();
+        if (weekNumber.includes(searchInput)) {
+            calendar.style.display = 'block';
+        } else {
+            calendar.style.display = 'none';
+        }
+    });
+}
 
 // Initial filter to show all activities on page load
 filterActivities();
 document.addEventListener('DOMContentLoaded', function() {
             // Add any interactive functionality here
         });
-
-
 </script>
 </body>
 </html>
 
-
-<script>
-        function filterActivities() {
-            const userType = document.getElementById('user-type').value;
-            const sectorContainers = document.querySelectorAll('.sector-container');
-
-            sectorContainers.forEach(container => {
-                if (container.id === userType) {
-                    container.classList.add('active');
-                } else {
-                    container.classList.remove('active');
-                }
-            });
-        }
-    </script>
 
 
