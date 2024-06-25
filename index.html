@@ -118,9 +118,24 @@ footer {
         .others{
            background-color:lightpink;
          }
-        
+         .streak-map {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
 
-</style>
+        .streak-map div {
+            width: 20px;
+            height: 20px;
+            margin: 2px;
+            background-color: #e0e0e0;
+        }
+
+        .streak-map div.active {
+            background-color: #76c7c0;
+        }
+
+       </style>
 </head>
 <body>
     <header>
@@ -151,253 +166,491 @@ footer {
            <div id="kids" class="sector-container kids"> 
             <h3>Kids Activities</h3>
               <div class="calendar"><h4>Week 1</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
-                <!-- Add more weeks as needed -->
+                <label for="weekInput1">Painting</label> 
+               <!-- Add more weeks as needed -->
+                <input type="checkbox" onchange="toggleActivity(this, 'week1')"> Completed
+                <div id="week1-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
             </div>
             <div class="calendar"><h4>Week 2</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
-                <!-- Add more weeks as needed -->
+                <label for="weekInput1">Drawing</label>
+                <input type="checkbox" onchange="toggleActivity(this, 'week2')"> Completed
+                <div id="week2-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+                 <!-- Add more weeks as needed -->
             </div>
            <div class="calendar"><h4>Week 3</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
-                <!-- Add more weeks as needed -->
+                <label for="weekInput1">Swimming</label>
+                <input type="checkbox" onchange="toggleActivity(this, 'week3')"> Completed
+                <div id="week3-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
             </div>
              <div class="calendar"><h4>Week 4</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
-                <!-- Add more weeks as needed -->
+                <label for="weekInput1">Music</label>
+               <input type="checkbox" onchange="toggleActivity(this, 'week4')"> Completed
+                <div id="week4-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
+                
             </div>
             <div class="calendar"><h4>Week 5</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Chess</label>
+                <input type="checkbox" onchange="toggleActivity(this, 'week5')"> Completed
+                <div id="week5-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
             </div>
             <div class="calendar"><h4>Week 6</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Hockey</label>
+                <input type="checkbox" onchange="toggleActivity(this, 'week6')"> Completed
+                <div id="week6-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
                 <!-- Add more weeks as needed -->
             </div>
             <div class="calendar"><h4>Week 7</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Cricket</label>
+               <input type="checkbox" onchange="toggleActivity(this, 'week7')"> Completed
+                <div id="week7-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
                 <!-- Add more weeks as needed -->
             </div>
            <div class="calendar"><h4>Week 8</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Dance</label>
+                <input type="checkbox" onchange="toggleActivity(this, 'week8')"> Completed
+                <div id="week8-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
                 <!-- Add more weeks as needed -->
             </div>
              <div class="calendar"><h4>Week 9</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Boxing</label>
+                <input type="checkbox" onchange="toggleActivity(this, 'week9')"> Completed
+                <div id="week9-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
                 <!-- Add more weeks as needed -->
             </div>
             <div class="calendar"><h4>Week 10</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Taiekwando</label>
+                <input type="checkbox" onchange="toggleActivity(this, 'week10')"> Completed
+                <div id="week10-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
             </div>
              <div class="calendar"><h4>Week 11</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Dance</label>
+               <input type="checkbox" onchange="toggleActivity(this, 'week11')"> Completed
+                <div id="week11-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
                 <!-- Add more weeks as needed -->
             </div>
             <div class="calendar"><h4>Week 12</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Drawing</label>
+                 <input type="checkbox" onchange="toggleActivity(this, 'week12')"> Completed
+                <div id="week12-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
+               
                 <!-- Add more weeks as needed -->
             </div>
            <div class="calendar"><h4>Week 13</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Painting</label>
+                 <input type="checkbox" onchange="toggleActivity(this, 'week13')"> Completed
+                <div id="week13-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
                 <!-- Add more weeks as needed -->
             </div>
              <div class="calendar"><h4>Week 14</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Swimming</label>
+               <input type="checkbox" onchange="toggleActivity(this, 'week14')"> Completed
+                <div id="week14-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
                 <!-- Add more weeks as needed -->
             </div>
             <div class="calendar"><h4>Week 15</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Taiekwando</label>
+                <input type="checkbox" onchange="toggleActivity(this, 'week15')"> Completed
+                <div id="week15-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
             </div>
             <div class="calendar"><h4>Week 16</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Chess</label>
+                <input type="checkbox" onchange="toggleActivity(this, 'week16')"> Completed
+                <div id="week16-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
                 <!-- Add more weeks as needed -->
             </div>
             <div class="calendar"><h4>Week 17</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Hockey</label>
+                <input type="checkbox" onchange="toggleActivity(this, 'week17')"> Completed
+                <div id="week17-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
                 <!-- Add more weeks as needed -->
             </div>
            <div class="calendar"><h4>Week 18</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Cricket</label>
+               <input type="checkbox" onchange="toggleActivity(this, 'week18')"> Completed
+                <div id="week18-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
                 <!-- Add more weeks as needed -->
             </div>
              <div class="calendar"><h4>Week 19</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Boxing</label>
+                <input type="checkbox" onchange="toggleActivity(this, 'week19')"> Completed
+                <div id="week19-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
                 <!-- Add more weeks as needed -->
             </div>
             <div class="calendar"><h4>Week 20</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Drawing</label>
+               <input type="checkbox" onchange="toggleActivity(this, 'week20')"> Completed
+                <div id="week20-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
             </div>
             <div class="calendar"><h4>Week 21</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Music</label>
+                <input type="checkbox" onchange="toggleActivity(this, 'week21')"> Completed
+                <div id="week21-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
                 <!-- Add more weeks as needed -->
             </div>
             <div class="calendar"><h4>Week 22</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                 <label for="weekInnput1">Carroms</label>
+                <input type="checkbox" onchange="toggleActivity(this, 'week22')"> Completed
+                <div id="week22-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
                 <!-- Add more weeks as needed -->
             </div>
            <div class="calendar"><h4>Week 23</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+               <label for="weekInnput1">Cycling</label>
+                
+                <input type="checkbox" onchange="toggleActivity(this, 'week23')"> Completed
+                <div id="week23-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
+
+
                 <!-- Add more weeks as needed -->
             </div>
              <div class="calendar"><h4>Week 24</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Dance</label>
+              <input type="checkbox" onchange="toggleActivity(this, 'week24')"> Completed
+                <div id="week24-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
+
                 <!-- Add more weeks as needed -->
             </div>
             <div class="calendar"><h4>Week 25</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Music</label>
+               <input type="checkbox" onchange="toggleActivity(this, 'week25')"> Completed
+                <div id="week25-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
+
             </div>
             <div class="calendar"><h4>Week 26</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Painting</label>
+                 <input type="checkbox" onchange="toggleActivity(this, 'week26')"> Completed
+                <div id="week26-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
+
                 <!-- Add more weeks as needed -->
             </div>
             <div class="calendar"><h4>Week 27</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Drawing</label>
+                 <input type="checkbox" onchange="toggleActivity(this, 'week27')"> Completed
+                <div id="week27-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
+
                 <!-- Add more weeks as needed -->
             </div>
            <div class="calendar"><h4>Week 28</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Swimming</label>
+                <input type="checkbox" onchange="toggleActivity(this, 'week28')"> Completed
+                <div id="week28-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
+
                 <!-- Add more weeks as needed -->
             </div>
              <div class="calendar"><h4>Week 29</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Cricket</label>
+                 <input type="checkbox" onchange="toggleActivity(this, 'week29')"> Completed
+                <div id="week29-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
+
                 <!-- Add more weeks as needed -->
             </div>
             <div class="calendar"><h4>Week 30</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
-            </div>
+                <label for="weekInput1">Chess</label>
+                <input type="checkbox" onchange="toggleActivity(this, 'week30')"> Completed
+                <div id="week30-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
+
+             </div>
             <div class="calendar"><h4>Week 31</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Carroms</label>
+                <input type="checkbox" onchange="toggleActivity(this, 'week31')"> Completed
+                <div id="week31-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
                 <!-- Add more weeks as needed -->
             </div>
             <div class="calendar"><h4>Week 32</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Abacus</label>
+                <input type="checkbox" onchange="toggleActivity(this, 'week32')"> Completed
+                <div id="week32-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
+
                 <!-- Add more weeks as needed -->
             </div>
            <div class="calendar"><h4>Week 33</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Vedic Math</label>
+                <input type="checkbox" onchange="toggleActivity(this, 'week33')"> Completed
+                <div id="week33-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
+
                 <!-- Add more weeks as needed -->
             </div>
              <div class="calendar"><h4>Week 34</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Dance</label>
+                <input type="checkbox" onchange="toggleActivity(this, 'week34')"> Completed
+                <div id="week34-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
+
                 <!-- Add more weeks as needed -->
             </div>
             <div class="calendar"><h4>Week 35</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Music</label>
+                <input type="checkbox" onchange="toggleActivity(this, 'week35')"> Completed
+                <div id="week35-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
+
             </div>
             <div class="calendar"><h4>Week 36</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Cricket</label>
+               <input type="checkbox" onchange="toggleActivity(this, 'week36')"> Completed
+                <div id="week36-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
+
                 <!-- Add more weeks as needed -->
             </div>
             <div class="calendar"><h4>Week 37</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Drawing</label>
+                <input type="checkbox" onchange="toggleActivity(this, 'week37')"> Completed
+                <div id="week37-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
+
                 <!-- Add more weeks as needed -->
             </div>
            <div class="calendar"><h4>Week 38</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Music</label>
+                <input type="checkbox" onchange="toggleActivity(this, 'week38')"> Completed
+                <div id="week38-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
+
                 <!-- Add more weeks as needed -->
             </div>
              <div class="calendar"><h4>Week 39</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Hockey</label>
+                <input type="checkbox" onchange="toggleActivity(this, 'week39')"> Completed
+                <div id="week39-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
+
                 <!-- Add more weeks as needed -->
             </div>
             <div class="calendar"><h4>Week 40</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Chess</label>
+                <input type="checkbox" onchange="toggleActivity(this, 'week40')"> Completed
+                <div id="week40-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
+
             </div>
             <div class="calendar"><h4>Week 41</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Carroms</label>
+                <input type="checkbox" onchange="toggleActivity(this, 'week41')"> Completed
+                <div id="week41-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
+
                 <!-- Add more weeks as needed -->
             </div>
             <div class="calendar"><h4>Week 42</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Cricket</label>
+                <input type="checkbox" onchange="toggleActivity(this, 'week42')"> Completed
+                <div id="week42-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
+
                 <!-- Add more weeks as needed -->
             </div>
            <div class="calendar"><h4>Week 43</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Taiekwando</label>
+                <input type="checkbox" onchange="toggleActivity(this, 'week43')"> Completed
+                <div id="week43-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
+
                 <!-- Add more weeks as needed -->
             </div>
              <div class="calendar"><h4>Week 44</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Skating</label>
+                <input type="checkbox" onchange="toggleActivity(this, 'week44')"> Completed
+                <div id="week44-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
+
                 <!-- Add more weeks as needed -->
             </div>
             <div class="calendar"><h4>Week 45</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Cricket</label>
+                <input type="checkbox" onchange="toggleActivity(this, 'week45')"> Completed
+                <div id="week45-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
+
             </div>
             <div class="calendar"><h4>Week 46</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Abacus</label>
+                <input type="checkbox" onchange="toggleActivity(this, 'week46')"> Completed
+                <div id="week46-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
+
                 <!-- Add more weeks as needed -->
             </div>
             <div class="calendar"><h4>Week 47</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Vedic Math</label>
+               <input type="checkbox" onchange="toggleActivity(this, 'week47')"> Completed
+                <div id="week47-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
+
                 <!-- Add more weeks as needed -->
             </div>
            <div class="calendar"><h4>Week 48</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Painting</label>
+                <input type="checkbox" onchange="toggleActivity(this, 'week48')"> Completed
+                <div id="week48-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
+
                 <!-- Add more weeks as needed -->
             </div>
              <div class="calendar"><h4>Week 49</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Cycling</label>
+                <input type="checkbox" onchange="toggleActivity(this, 'week49')"> Completed
+                <div id="week49-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
+
                 <!-- Add more weeks as needed -->
             </div>
             <div class="calendar"><h4>Week 50</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Music</label>
+                <input type="checkbox" onchange="toggleActivity(this, 'week50')"> Completed
+                <div id="week50-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
+
             </div>
           <div class="calendar"><h4>Week 51</h4>
-            <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+            <label for="weekInput1">Hockey</label>
+                <input type="checkbox" onchange="toggleActivity(this, 'week51')"> Completed
+                <div id="week51-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
+
                 <!-- Add more weeks as needed -->
             </div>
             <div class="calendar"><h4>Week 52</h4>
-                <label for="weekInput1">Activity:</label>
-                <input type="text" id="weekInput1" name="weekInput1" placeholder="Enter activity">
+                <label for="weekInput1">Dance</label>
+               <input type="checkbox" onchange="toggleActivity(this, 'week52')"> Completed
+                <div id="week52-streak" class="streak-map">
+                    <!-- Streak map will be populated by JavaScript -->
+                </div>
+
+
                 <!-- Add more weeks as needed -->
             </div>
       </div>
@@ -1200,12 +1453,34 @@ function searchWeek() {
         }
     });
 }
+function toggleActivity(checkbox, weekId) {
+            const streakMap = document.getElementById(`${weekId}-streak`);
+            const days = streakMap.querySelectorAll('div');
+
+            const currentDay = new Date().getDay();
+            if (checkbox.checked) {
+                days[currentDay].classList.add('active');
+            } else {
+                days[currentDay].classList.remove('active');
+            }
+        }
 
 // Initial filter to show all activities on page load
 filterActivities();
 document.addEventListener('DOMContentLoaded', function() {
             // Add any interactive functionality here
         });
+       
+        document.addEventListener('DOMContentLoaded', function () {
+            const streakMaps = document.querySelectorAll('.streak-map');
+            streakMaps.forEach(map => {
+                for (let i = 0; i < 7; i++) {
+                    const day = document.createElement('div');
+                    map.appendChild(day);
+                }
+            });
+        });
+
 </script>
 </body>
 </html>
