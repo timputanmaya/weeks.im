@@ -159,6 +159,48 @@ footer {
   height: 81px;
   border: 2px solid hsla(0, 0%, 0%, 0.5);
 }
+.grid-item {
+            float: left;
+            width: 100px;
+            height: 81px;
+            border: 2px solid hsla(0, 0%, 0%, 0.5);
+            perspective: 1000px;
+        }
+
+        .card {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+        }
+
+        .card.flip {
+            transform: rotateY(180deg);
+        }
+
+        .card .front, .card .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card .front {
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card .back {
+            background-color: #fff;
+            transform: rotateY(180deg);
+            padding: 5px;
+            box-sizing: border-box;
+            text-align: center;
+        }
 
 
 
@@ -195,12 +237,18 @@ footer {
            <div id="kids" class="sector-container kids"> 
             <h3>Kids Activities</h3>
              <div class="grid" >
-              <div class="grid-item calendar"><h4>Week 1</h4>
-                <label for="weekInput1">Painting</label> 
-               
-                 <input type="checkbox" onchange="toggleActivity(this, 1)"> Completed                   
+              <div class="grid-item calendar">
+                    <div class="card" onclick="this.classList.toggle('flip')">
+                        <div class="front" style="background-image: url('D:/weekly activities/p1.jpg');">
+                            <h4>1</h4>
+                        </div>
+                        <div class="back">
+                            
+                            <p>Painting</p>
+                            <input type="checkbox" onchange="toggleActivity(this, 1)">Completed
+                        </div>
+                    </div>
                 </div>
-
             
             <div class="grid-item calendar"><h4>Week 2</h4>
                 <label for="weekInput1">Drawing</label>
