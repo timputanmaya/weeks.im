@@ -202,6 +202,12 @@ footer {
     background-position: center;
     color: black; /* Optional: Ensure text is readable */
 }
+     .week2 {
+    background-image: url('d2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black; /* Optional: Ensure text is readable */
+}
        </style>
      <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 </head>
@@ -235,10 +241,10 @@ footer {
            <div id="kids" class="sector-container kids"> 
             <h3>Kids Activities</h3>
              <div class="grid" >
-              <div class="grid-item calendar week1">
+              <div class="grid-item calendar week1"><h4>Week 1</h4>
                     <div class="card" onclick="this.classList.toggle('flip')">
                         <div class="front">
-                            <h4>Week 1</h4>
+                        
                         </div>
                         <div class="back">
                             
@@ -251,13 +257,19 @@ Notes: Remember to bring a bag,water,paint brushes and A4 size papers.</p>
                     </div>
                 </div>
             
-            <div class="grid-item calendar"><h4>Week 2</h4>
-                <label for="weekInput1">Drawing</label>
+            <div class="grid-item calendar week2"><h4>Week 2</h4>
+                <div class="card" onclick="this.classList.toggle('flip')">
+                    <div class="front">
+                        
+                        </div>
+                        <div class="back">
+                             <p>Title: Drawing
+Description: A way of making a picture and exploring it.
+Instructions: Give each child an image to see,understand and bring their talent out by drawing it.
+Notes: Remember to bring a bag,pencils,caryons,pastels and A4 size papers.</p>
                 <input type="checkbox" onchange="toggleActivity(this, 2)"> Completed
-                
-                    <!-- Streak map will be populated by JavaScript -->
-                
-                 <!-- Add more weeks as needed -->
+                        </div>
+                </div>
             </div>
            <div class="grid-item calendar"><h4>Week 3</h4>
                 <label for="weekInput1">Swimming</label>
