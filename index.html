@@ -161,8 +161,8 @@ footer {
 }
 .grid-item {
             float: left;
-            width: 100px;
-            height: 81px;
+            width: 440px;
+            height: 440px;
             border: 2px solid hsla(0, 0%, 0%, 0.5);
             perspective: 1000px;
         }
@@ -201,6 +201,14 @@ footer {
             box-sizing: border-box;
             text-align: center;
         }
+.week1 {
+    background-image: url('D:/weekly activities/p1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black; /* Optional: Ensure text is readable */
+}
+
+
 
 
 
@@ -237,14 +245,17 @@ footer {
            <div id="kids" class="sector-container kids"> 
             <h3>Kids Activities</h3>
              <div class="grid" >
-              <div class="grid-item calendar">
+              <div class="grid-item calendar week1">
                     <div class="card" onclick="this.classList.toggle('flip')">
-                        <div class="front" style="background-image: url('p1.jpg');">
-                            <h4>1</h4>
+                        <div class="front">
+                            <h4>Week 1</h4>
                         </div>
                         <div class="back">
                             
-                            <p>Painting</p>
+                            <p>Title: Nature Scavenger Hunt
+Description: Explore the outdoors and find different items from nature.
+Instructions: Give each child a list of items to find, such as a pinecone, a feather, and a smooth rock. Set a time limit and see who can find the most items.
+Notes: Remember to bring a bag for collecting items and wear comfortable shoes.</p>
                             <input type="checkbox" onchange="toggleActivity(this, 1)">Completed
                         </div>
                     </div>
