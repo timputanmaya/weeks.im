@@ -292,6 +292,18 @@ footer {
     background-position: center;
     color: black; /* Optional: Ensure text is readable */
 }
+      .week17 {
+    background-image: url('h1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black; /* Optional: Ensure text is readable */
+} 
+      .week18 {
+    background-image: url('cr1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black; /* Optional: Ensure text is readable */
+} 
        </style>
      <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 </head>
@@ -551,17 +563,33 @@ Notes: Bring a chess board.</p>
                    </div>         
              </div>               
             </div>
-            <div class="grid-item calendar"><h4>Week 17</h4>
-                <label for="weekInput1">Hockey</label>
+            <div class="grid-item calendar week17"><h4>Week 17</h4>
+               <div class="card" onclick="this.classList.toggle('flip')">
+                   <div class="front">
+                        
+                        </div>
+                        <div class="back">
+                             <p>Title:Hockey
+Description:A game played on foot with hockey stick and with a small ball.
+Instructions:Players can drag the ball from the opponent's side into their field.
+Notes: Bring a hockey stick,ball,wearing helmet and shoes.</p>  
                 <input type="checkbox" onchange="toggleActivity(this, 17)"> Completed
-                                <!-- Add more weeks as needed -->
+                 </div>               
+            </div>              
             </div>
-           <div class="grid-item calendar"><h4>Week 18</h4>
-                <label for="weekInput1">Cricket</label>
+           <div class="grid-item calendar week18"><h4>Week 18</h4>
+               <div class="card" onclick="this.classList.toggle('flip')">
+                   <div class="front">
+                        
+                        </div>
+                        <div class="back">
+                             <p>Title:Cricket
+Description:A game played between 2 teams each of 11 per team with a bat and ball on the field.
+Instructions:One team will bat first and the second team goes next.
+Notes: Bring a bat,ball,safe guards,wearing helmet and shoes.</p>   
                <input type="checkbox" onchange="toggleActivity(this, 18)"> Completed
-                
-
-                <!-- Add more weeks as needed -->
+               </div>              
+            </div> 
             </div>
              <div class="grid-item calendar"><h4>Week 19</h4>
                 <label for="weekInput1">Boxing</label>
