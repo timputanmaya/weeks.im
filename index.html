@@ -208,6 +208,12 @@ footer {
     background-position: center;
     color: black; /* Optional: Ensure text is readable */
 }
+     .week3 {
+    background-image: url('s1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black; /* Optional: Ensure text is readable */
+}
        </style>
      <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 </head>
@@ -272,11 +278,20 @@ Notes: Remember to bring a bag,pencils,caryons,pastels and A4 size papers.</p>
                 </div>
             </div>
            <div class="grid-item calendar"><h4>Week 3</h4>
-                <label for="weekInput1">Swimming</label>
+                    <div class="card" onclick="this.classList.toggle('flip')">
+                    <div class="front">
+                        
+                        </div>
+                        <div class="back">
+                             <p>Title: Swimming
+Description: The propulsion of body through water by combined joints.
+Instructions:Enter water with instructor holding their arms to stay afloat.
+Notes: Bring water tube,swimming suit,cap,goggles.</p>    
                 <input type="checkbox" onchange="toggleActivity(this, 3)"> Completed
                 
                     <!-- Streak map will be populated by JavaScript -->
-                
+                 </div>
+            </div>
 
             </div>
              <div class="grid-item calendar"><h4>Week 4</h4>
