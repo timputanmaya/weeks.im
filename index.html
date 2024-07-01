@@ -214,8 +214,14 @@ footer {
     background-position: center;
     color: black; /* Optional: Ensure text is readable */
 }
-      .week4 {
+    .week4 {
     background-image: url('m1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black; /* Optional: Ensure text is readable */
+}
+     .week5 {
+    background-image: url('c1.jpg');
     background-size: cover;
     background-position: center;
     color: black; /* Optional: Ensure text is readable */
@@ -311,10 +317,19 @@ Notes: Bring a book, pen,earphnones.</p>
             </div>
          </div>               
     </div>
-            <div class="grid-item calendar"><h4>Week 5</h4>
-                <label for="weekInput1">Chess</label>
+            <div class="grid-item calendar week5"><h4>Week 5</h4>
+                 <div class="card" onclick="this.classList.toggle('flip')">
+                     <div class="front">
+                        
+                        </div>
+                        <div class="back">
+                             <p>Title:Chess
+Description:A two player strategy mind game where the aim is to move different types of playing piece,on a square board.
+Instructions:each player takes a move at a time white&black in a unique way.
+Notes: Bring a book, pen,earphnones.</p>    
                 <input type="checkbox" onchange="toggleActivity(this, 5)"> Completed
-               
+               </div>
+              </div>
             </div>
             <div class="grid-item calendar"><h4>Week 6</h4>
                 <label for="weekInput1">Hockey</label>
