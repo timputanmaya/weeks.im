@@ -274,6 +274,12 @@ footer {
     background-position: center;
     color: black; /* Optional: Ensure text is readable */
 }
+     .week14 {
+    background-image: url('s1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black; /* Optional: Ensure text is readable */
+}
        </style>
      <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 </head>
@@ -491,11 +497,19 @@ Notes: Remember to bring a bag,water,paint brushes and A4 size papers.</p>
           </div>         
              </div> 
             </div>
-             <div class="grid-item calendar"><h4>Week 14</h4>
-                <label for="weekInput1">Swimming</label>
+             <div class="grid-item calendar week14"><h4>Week 14</h4>
+               <div class="card" onclick="this.classList.toggle('flip')">
+                    <div class="front">
+                        
+                        </div>
+                        <div class="back">
+                             <p>Title: Swimming
+Description: The propulsion of body through water by combined joints.
+Instructions:Enter water with instructor holding their arms to stay afloat.
+Notes: Bring water tube,swimming suit,cap,goggles.</p> 
                <input type="checkbox" onchange="toggleActivity(this, 14)"> Completed
-                
-                <!-- Add more weeks as needed -->
+                </div>         
+             </div>    
             </div>
             <div class="grid-item calendar"><h4>Week 15</h4>
                 <label for="weekInput1">Taiekwando</label>
