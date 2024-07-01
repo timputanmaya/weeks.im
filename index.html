@@ -226,6 +226,12 @@ footer {
     background-position: center;
     color: black; /* Optional: Ensure text is readable */
 }
+     .week6 {
+    background-image: url('h1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black; /* Optional: Ensure text is readable */
+}
        </style>
      <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 </head>
@@ -325,16 +331,25 @@ Notes: Bring a book, pen,earphnones.</p>
                         <div class="back">
                              <p>Title:Chess
 Description:A two player strategy mind game where the aim is to move different types of playing piece,on a square board.
-Instructions:each player takes a move at a time white&black in a unique way.
+Instructions:Each player takes a move at a time white&black in a unique way.
 Notes: Bring a book, pen,earphnones.</p>    
                 <input type="checkbox" onchange="toggleActivity(this, 5)"> Completed
                </div>
               </div>
             </div>
-            <div class="grid-item calendar"><h4>Week 6</h4>
-                <label for="weekInput1">Hockey</label>
+            <div class="grid-item calendar week6"><h4>Week 6</h4>
+               <div class="card" onclick="this.classList.toggle('flip')">
+                   <div class="front">
+                        
+                        </div>
+                        <div class="back">
+                             <p>Title:Hockey
+Description:A game played on foot with hockey stick and with a small ball.
+Instructions:Players can drag the ball from the opponent's side into their field.
+Notes: Bring a hockey stick,ball,wearing helmet and shoes.</p>    
                 <input type="checkbox" onchange="toggleActivity(this, 6)"> Completed
-                                <!-- Add more weeks as needed -->
+                  </div>
+              </div>               
             </div>
             <div class="grid-item calendar"><h4>Week 7</h4>
                 <label for="weekInput1">Cricket</label>
