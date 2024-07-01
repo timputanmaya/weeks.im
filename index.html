@@ -268,6 +268,12 @@ footer {
     background-position: center;
     color: black; /* Optional: Ensure text is readable */
 }
+     .week13 {
+    background-image: url('p2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black; /* Optional: Ensure text is readable */
+}
        </style>
      <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 </head>
@@ -471,11 +477,19 @@ Notes: Remember to bring a bag,pencils,caryons,pastels and A4 size papers.</p>
                 </div>         
              </div> 
             </div>
-           <div class="grid-item calendar"><h4>Week 13</h4>
-                <label for="weekInput1">Painting</label>
+           <div class="grid-item calendar week13"><h4>Week 13</h4>
+               <div class="card" onclick="this.classList.toggle('flip')">
+                        <div class="front">
+                        
+                        </div>
+                        <div class="back">
+                            <p>Title: Painting
+Description: Coney ideas,express emotion,use senses.
+Instructions: Give each child an image to see and follow it.
+Notes: Remember to bring a bag,water,paint brushes and A4 size papers.</p>
                  <input type="checkbox" onchange="toggleActivity(this, 13)"> Completed
-         
-                <!-- Add more weeks as needed -->
+          </div>         
+             </div> 
             </div>
              <div class="grid-item calendar"><h4>Week 14</h4>
                 <label for="weekInput1">Swimming</label>
