@@ -244,6 +244,12 @@ footer {
     background-position: center;
     color: black; /* Optional: Ensure text is readable */
 }
+     .week9 {
+    background-image: url('b1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black; /* Optional: Ensure text is readable */
+}
        </style>
      <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 </head>
@@ -391,10 +397,19 @@ Notes: Bring a water bottle,wear shoes.</p>
                 </div>              
             </div>   
             </div>
-             <div class="grid-item calendar"><h4>Week 9</h4>
-                <label for="weekInput1">Boxing</label>
+             <div class="grid-item calendar week9"><h4>Week 9</h4>
+                <div class="card" onclick="this.classList.toggle('flip')">
+                 <div class="front">
+                        
+                        </div>
+                        <div class="back">
+                             <p>Title:Boxing
+Description:A sport that involves strategically punching an opponent while defending yourself.
+Instructions:The punch should be below the belt or back of the opponent's head not on the neck.
+Notes: Wear gloves,helmet,tooth clips.</p>   
                 <input type="checkbox" onchange="toggleActivity(this, 9)"> Completed
-                                <!-- Add more weeks as needed -->
+                 </div>              
+            </div>                
             </div>
             <div class="grid-item calendar"><h4>Week 10</h4>
                 <label for="weekInput1">Taiekwando</label>
