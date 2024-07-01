@@ -231,8 +231,15 @@ footer {
     background-size: cover;
     background-position: center;
     color: black; /* Optional: Ensure text is readable */
-}.week7 {
+} 
+     .week7 {
     background-image: url('cr1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black; /* Optional: Ensure text is readable */
+}
+     .week8 {
+    background-image: url('d1.jpg');
     background-size: cover;
     background-position: center;
     color: black; /* Optional: Ensure text is readable */
@@ -370,11 +377,19 @@ Notes: Bring a bat,ball,safe guards,wearing helmet and shoes.</p>
                  </div>               
             </div>              
             </div>
-           <div class="grid-item calendar"><h4>Week 8</h4>
-                <label for="weekInput1">Dance</label>
+           <div class="grid-item calendar week8"><h4>Week 8</h4>
+               <div class="card" onclick="this.classList.toggle('flip')">
+                 <div class="front">
+                        
+                        </div>
+                        <div class="back">
+                             <p>Title:Dance
+Description:A form of creative expression through physical movement that includes rhythmicmovements that accompany music.
+Instructions:It is poignant and hopeful.
+Notes: Bring a water bottle,wear shoes.</p>   
                 <input type="checkbox" onchange="toggleActivity(this, 8)"> Completed
-                
-                <!-- Add more weeks as needed -->
+                </div>              
+            </div>   
             </div>
              <div class="grid-item calendar"><h4>Week 9</h4>
                 <label for="weekInput1">Boxing</label>
