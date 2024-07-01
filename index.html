@@ -256,6 +256,12 @@ footer {
     background-position: center;
     color: black; /* Optional: Ensure text is readable */
 }
+     .week11 {
+    background-image: url('d1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black; /* Optional: Ensure text is readable */
+}
        </style>
      <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 </head>
@@ -431,10 +437,19 @@ Notes: Wear mentioned white dress with a belt.</p>
                        </div>              
             </div>         
              </div>
-             <div class="grid-item calendar"><h4>Week 11</h4>
-                <label for="weekInput1">Dance</label>
+             <div class="grid-item calendar week11"><h4>Week 11</h4>
+                 <div class="card" onclick="this.classList.toggle('flip')">
+                 <div class="front">
+                        
+                        </div>
+                        <div class="back">
+                             <p>Title:Dance
+Description:A form of creative expression through physical movement that includes rhythmicmovements that accompany music.
+Instructions:It is poignant and hopeful.
+Notes: Bring a water bottle,wear shoes.</p>  
                <input type="checkbox" onchange="toggleActivity(this, 11)"> Completed
-              <!-- Add more weeks as needed -->
+             </div>         
+             </div>
             </div>
             <div class="grid-item calendar"><h4>Week 12</h4>
                 <label for="weekInput1">Drawing</label>
