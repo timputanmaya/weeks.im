@@ -262,6 +262,12 @@ footer {
     background-position: center;
     color: black; /* Optional: Ensure text is readable */
 }
+      .week12 {
+    background-image: url('d2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black; /* Optional: Ensure text is readable */
+}
        </style>
      <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 </head>
@@ -451,12 +457,19 @@ Notes: Bring a water bottle,wear shoes.</p>
              </div>         
              </div>
             </div>
-            <div class="grid-item calendar"><h4>Week 12</h4>
-                <label for="weekInput1">Drawing</label>
+            <div class="grid-item calendar week12"><h4>Week 12</h4>
+                <div class="card" onclick="this.classList.toggle('flip')">
+                    <div class="front">
+                        
+                        </div>
+                        <div class="back">
+                             <p>Title: Drawing
+Description: A way of making a picture and exploring it.
+Instructions: Give each child an image to see,understand and bring their talent out by drawing it.
+Notes: Remember to bring a bag,pencils,caryons,pastels and A4 size papers.</p>
                  <input type="checkbox" onchange="toggleActivity(this, 12)"> Completed
-                
-               
-                <!-- Add more weeks as needed -->
+                </div>         
+             </div> 
             </div>
            <div class="grid-item calendar"><h4>Week 13</h4>
                 <label for="weekInput1">Painting</label>
