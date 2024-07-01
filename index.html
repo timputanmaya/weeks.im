@@ -280,6 +280,18 @@ footer {
     background-position: center;
     color: black; /* Optional: Ensure text is readable */
 }
+     .week15 {
+    background-image: url('t1.png');
+    background-size: cover;
+    background-position: center;
+    color: black; /* Optional: Ensure text is readable */
+}
+      .week16 {
+    background-image: url('c1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black; /* Optional: Ensure text is readable */
+}
        </style>
      <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 </head>
@@ -380,7 +392,7 @@ Notes: Bring a book, pen,earphnones.</p>
                              <p>Title:Chess
 Description:A two player strategy mind game where the aim is to move different types of playing piece,on a square board.
 Instructions:Each player takes a move at a time white&black in a unique way.
-Notes: Bring a book, pen,earphnones.</p>    
+Notes: Bring a chess board.</p>    
                 <input type="checkbox" onchange="toggleActivity(this, 5)"> Completed
                </div>
               </div>
@@ -511,15 +523,33 @@ Notes: Bring water tube,swimming suit,cap,goggles.</p>
                 </div>         
              </div>    
             </div>
-            <div class="grid-item calendar"><h4>Week 15</h4>
-                <label for="weekInput1">Taiekwando</label>
+            <div class="grid-item calendar week15"><h4>Week 15</h4>
+               <div class="card" onclick="this.classList.toggle('flip')">
+                 <div class="front">
+                        
+                        </div>
+                        <div class="back">
+                             <p>Title:Taekwando
+Description:An art of self defence originated in Korea.
+Instructions:Keep your attention,bow,ready and start..
+Notes: Wear mentioned white dress with a belt.</p>   
                 <input type="checkbox" onchange="toggleActivity(this, 15)"> Completed
-                
+                </div>         
+             </div> 
             </div>
-            <div class="grid-item calendar"><h4>Week 16</h4>
-                <label for="weekInput1">Chess</label>
+            <div class="grid-item calendar week16"><h4>Week 16</h4>
+                  <div class="card" onclick="this.classList.toggle('flip')">
+                     <div class="front">
+                        
+                        </div>
+                        <div class="back">
+                             <p>Title:Chess
+Description:A two player strategy mind game where the aim is to move different types of playing piece,on a square board.
+Instructions:Each player takes a move at a time white&black in a unique way.
+Notes: Bring a chess board.</p>    
                 <input type="checkbox" onchange="toggleActivity(this, 16)"> Completed
-                                <!-- Add more weeks as needed -->
+                   </div>         
+             </div>               
             </div>
             <div class="grid-item calendar"><h4>Week 17</h4>
                 <label for="weekInput1">Hockey</label>
