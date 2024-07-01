@@ -214,6 +214,12 @@ footer {
     background-position: center;
     color: black; /* Optional: Ensure text is readable */
 }
+      .week4 {
+    background-image: url('m1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black; /* Optional: Ensure text is readable */
+}
        </style>
      <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 </head>
@@ -291,15 +297,20 @@ Notes: Bring water tube,swimming suit,cap,goggles.</p>
                  </div>
             </div>
         </div>
-             <div class="grid-item calendar"><h4>Week 4</h4>
-                <label for="weekInput1">Music</label>
+             <div class="grid-item calendar week4"><h4>Week 4</h4>
+               <div class="card" onclick="this.classList.toggle('flip')">
+                 <div class="front">
+                        
+                        </div>
+                        <div class="back">
+                             <p>Title:Music
+Description:An art of sound in time that expresses ideas and emotions in significant forms through melody.
+Instructions:Start with basic Sa Re Ga Ma Pa.
+Notes: Bring a book, pen,earphnones.</p>    
                <input type="checkbox" onchange="toggleActivity(this, 4)"> Completed
-                
-                    <!-- Streak map will be populated by JavaScript -->
-               
-
-                
             </div>
+         </div>               
+    </div>
             <div class="grid-item calendar"><h4>Week 5</h4>
                 <label for="weekInput1">Chess</label>
                 <input type="checkbox" onchange="toggleActivity(this, 5)"> Completed
