@@ -316,6 +316,18 @@ footer {
     background-position: center;
     color: black; /* Optional: Ensure text is readable */
 }
+      .week21 {
+    background-image: url('m1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black; /* Optional: Ensure text is readable */
+}
+     .week22 {
+    background-image: url('ca1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black; /* Optional: Ensure text is readable */
+}
        </style>
      <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 </head>
@@ -630,15 +642,33 @@ Notes: Remember to bring a bag,pencils,caryons,pastels and A4 size papers.</p>
                  </div> 
             </div>              
             </div>
-            <div class="grid-item calendar"><h4>Week 21</h4>
-                <label for="weekInput1">Music</label>
+            <div class="grid-item calendar week21"><h4>Week 21</h4>
+                <div class="card" onclick="this.classList.toggle('flip')">
+                 <div class="front">
+                        
+                        </div>
+                        <div class="back">
+                             <p><b>Music</b>
+<u>Description</u>:An art of sound in time that expresses ideas and emotions in significant forms through melody.
+<u>Instructions</u>:Start with basic Sa Re Ga Ma Pa.
+<u>Notes</u>: Bring a book, pen,earphnones.</p>   
                 <input type="checkbox" onchange="toggleActivity(this, 21)"> Completed
-                                <!-- Add more weeks as needed -->
+                  </div> 
+            </div>                 
             </div>
-            <div class="grid-item calendar"><h4>Week 22</h4>
-                 <label for="weekInnput1">Carroms</label>
+            <div class="grid-item calendar week22"><h4>Week 22</h4>
+                <div class="card" onclick="this.classList.toggle('flip')">
+                 <div class="front">
+                        
+                        </div>
+                        <div class="back">
+                             <p><b>Carroms</b>
+<u>Description</u>:An indoor sport which includes a team or 2 players.
+<u>Instructions</u>:each player gets coins by goaling them through a striker.Black,white,red coins are in the game
+<u>Notes</u>: The player needs to have a carrom board.</p>   
                 <input type="checkbox" onchange="toggleActivity(this, 22)"> Completed
-                                <!-- Add more weeks as needed -->
+                 </div>                 
+            </div>               
             </div>
            <div class="grid-item calendar"><h4>Week 23</h4>
                <label for="weekInnput1">Cycling</label>
