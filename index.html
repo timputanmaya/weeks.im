@@ -172,6 +172,7 @@ footer {
             position: relative;
             transform-style: preserve-3d;
             transition: transform 0.6s;
+            cursor: pointer;
         }
 
         .card.flip {
@@ -204,6 +205,16 @@ footer {
             align-items: center;
             justify-content: center;
             padding-top: 40px; 
+            display: none;
+        }
+     .card:hover .back,
+        .card.flip .back {
+            display: flex; /* Show on hover or click */
+        }
+
+        .card:hover .front,
+        .card.flip .front {
+            display: none; /* Hide on hover or click */
         }
        .card .back p {
     margin: 0;
@@ -2169,11 +2180,7 @@ function toggleActivity(checkbox, weekNumber) {
             percentPosition: true
         });
    }
-
-// Initial filter to show all activities on page load
-filterActivities();
-
-        document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
             const streakMap = document.getElementById('annual-streak');
             for (let i = 0; i < 52; i++) {
                 const week = document.createElement('div');
@@ -2186,13 +2193,13 @@ filterActivities();
   columnWidth: '.grid-sizer',
   percentPosition: true
 })
-
          const activeContainer = document.querySelector('.sector-container.active');
         if (activeContainer) {
             initMasonry(activeContainer);
         }
     });
 
+        filterActivities();
 
               
    </script>
